@@ -1,3 +1,9 @@
+:root(
+    --primary-color #1f1922
+    --secondary-color darkorchid
+    --text-color #ffffff
+    --background-color #333
+    )
 *{
     margin : 0;
     padding : 0;
@@ -6,9 +12,10 @@
 body{
     min-height: 100vh;
     font-family : "Roboto", sans-serif;
-    color : #333;
-    background-image: url();
-    background-size: 45%;
+    color : var(--background-color);
+    background-image: url(../images/hand-robo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     background-position: center;
 }
 header{
