@@ -23,10 +23,24 @@ body{
     align-items : center;
     overflow-x: hidden;
     scroll-behavior: smooth;
-     background-image:linear-gradient(to bottom, darkorchid,rgb(54, 89, 129), rgb(0, 0, 0));
+    background-image:linear-gradient(to bottom, darkorchid,rgb(54, 89, 129), rgb(0, 0, 0));
 }
-figure{
+body h3{
+    color: white;
+    margin-bottom: 2%;
+    text-align: left;
+    text-decoration: underline;
+}
+body p{
+    color: white;
+    margin-bottom: 2%;
+    text-align: right;
+    padding: 2%;
+    font-size: 1.1rem;
+}
+figure img{
     border: white 2px solid;
+    border-radius: 1%;;
 }
 header{
     padding-top:0px;
@@ -112,7 +126,6 @@ nav li:first-child{
 main{
     min-height : 80vh;
     color : rgb(253, 249, 249);
-    background-color: black;
     opacity: 0.75;
 }
 figcaption{
@@ -128,14 +141,15 @@ figcaption{
     grid-auto-columns : 700px;
     grid-auto-rows: 500px;
     gap : 4em;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "box1 box2"
-        "box3 box4";
+        "box3 box4"
+        "box5 box6";
         justify-content: left;
         margin-bottom: 5%;
         margin-left: auto;
         margin-right: auto;
-
 }
 .box{
     border-radius : 8px;
@@ -170,9 +184,9 @@ footer{
         transition: all 0.2s ease-in-out;
     }
 }
-@media (max-width:400px){
-    div img {
-        width: 100%;
+@media (max-width:500px){
+    figure img {
+        width: 75%;
         height: auto;
         object-fit: fill;
     }
@@ -183,10 +197,13 @@ footer{
         grid-auto-columns : 300px;
         grid-auto-rows: 300px;
         grid-template-areas:
-        "box1"
-        "box2"
-        "box3"
-        "box4";
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6";
+        grid-template-columns: 1fr;
         justify-content: center;
         margin-bottom: 5%;
         margin-left: auto;
@@ -194,5 +211,18 @@ footer{
     }
     .box{
         font-size: 1rem;
+        padding: 5%;
+        margin: auto;
+        width: 50%auto;
+        height: 50%auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body p{
+        font-size: 1rem;
+        padding: 2%;
+        text-align: right;
     }
 }
