@@ -195,7 +195,7 @@ footer{
         width:100%;
     }
     #grid-container{
-        grid-auto-columns : 300px;
+        grid-auto-columns : auto;
         grid-auto-rows: 300px;
         grid-template-areas:
             "box1"
@@ -204,7 +204,7 @@ footer{
             "box4";
         grid-template-columns: 1fr;
         justify-content: center;
-        margin-bottom: 5%;
+        margin-bottom: 50%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -213,7 +213,7 @@ footer{
         padding: 5%;
         margin: auto;
         text-align: center;
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: center;
     }
